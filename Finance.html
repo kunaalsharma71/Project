@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Finance Support</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' 
+integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+(function ($) {
+ $(document).ready(function(){
+ // hide .navbar first
+$(".navbar").hide();
+// fade in .navbar
+$(function () {
+$(window).scroll(function () {
+    // set distance user needs to scroll before we fadeIn navbar
+	if ($(this).scrollTop() > 100) {
+	$('.navbar').fadeIn();
+			} else {
+			$('.navbar').fadeOut();
+}
+});	
+});
+});
+}(jQuery));
+  </script>
+  <script>
+  $(window).scroll(function () {
+    $('.animation-test').each(function () {
+        var imagePos = $(this).offset().top;
+        var imageHeight = $(this).height();
+        var topOfWindow = $(window).scrollTop();
+
+        if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
+            $(this).addClass("slideRight");
+        } else {
+            $(this).removeClass("slideRight");
+        }
+    });
+});</script>
+
+</style>
+  <style>
+  .element-to-hide{
+    visibility:hidden;
+}
+
+.slideRight {
+    visibility: visible;
+    animation-name: slideRight;
+    -webkit-animation-name: slideRight;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+}
+@keyframes slideRight {
+    0% {
+        transform: translateX(-150%);
+    }
+    50% {
+        transform: translateX(8%);
+    }
+    65% {
+        transform: translateX(-4%);
+    }
+    80% {
+        transform: translateX(4%);
+    }
+    95% {
+        transform: translateX(-2%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+@-webkit-keyframes slideRight {
+    0% {
+        -webkit-transform: translateX(-150%);
+    }
+    50% {
+        -webkit-transform: translateX(8%);
+    }
+    65% {
+        -webkit-transform: translateX(-4%);
+    }
+    80% {
+        -webkit-transform: translateX(4%);
+    }
+    95% {
+        -webkit-transform: translateX(-2%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}</style>
+  
+<style>
+.navbar-default {
+background-color: #008080;
+border-color: #444;
+}
+.navbar-default .navbar-nav > li > a {
+    color:white;
+	font-family: "Raleway", sans-serif;}
+ html,body{margin:0;padding: 0; width: 100%; height: 100%;}
+ 
+ 
+.wrapper{top:0px;
+    position: relative;
+    width: 100%;
+      height: 100%;
+    background: url('img13.jpg');
+    
+    background-size:cover;
+	opacity:0.8;
+}
+.wrapper .inner{
+     
+    display: table-cell;
+    vertical-align: middle;
+    windows: 100%;
+    max-width: none;
+}
+.content{
+
+    text-align: center;
+    max-width: 7000px;
+    margin: 0 auto;
+}
+
+.container-fluid{
+  background-image: url("wood.jpg");
+  
+}
+.footer{
+background-image:url("wood.jpg");
+color:grey}
+.footer-copyright{background-image:url("wood.jpg");}
+</style>
+<style>
+.carousel{
+    background: #2f4357;
+    margin-top: 20px;
+}
+.carousel-item{
+    text-align: center;
+    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+.bs-example{
+	margin: 20px;
+}
+</style>
+<style>
+body{overflow-x:hidden;}
+</style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top navbar-light" role="navigation">
+  <div class="container-fluid">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="Finance.html" style="color:white;font-size:30px;"><b>Financial Support<b></a>
+    </div>
+
+   
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#Home">Home</a></li>
+        <li><a   href="#aboutus">About Us</a></li>
+        <li><a href="#ContactUs">Contact Us</a></li>
+        <li><a href="career.html">Career</a></li>
+        </li>
+      </ul>
+     
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="wrapper" id="Home">
+    <div class="inner">
+        <div class="content" style="float:left;color:black;margin-bottom:450px;margin-left:30px;">
+            <h1 class="display" style="font-size:42px;color:white;">Startup Smarter</h1>
+            <p class="lg" style="font-size:22px;color:white;"><b>The best place to start, grow, and find your Venture.</b> </p>
+            <a class="btn btn-danger" href="form.html" target="_blank"> Get Started </a>
+        </div>
+    </div>
+  </div><br>
+  <hr>
+  
+  <div class="container" id="aboutus" >
+    
+      <div class="row" >
+	  <h1 style="text-align:center;color:grey">About Us</h1>
+	  <p class="lg" style="text-align:center;font-size:22px;color:grey"> Our Biggest Investors</p><br>
+	  
+	  
+          <div class="col-md-4 ">
+            <div class="thumbnail"><img src="img18.jpg" style="height:250px;"alt="Thumbnail Image 1" class="animation-test element-to-hide">
+              <div class="caption">
+                <h3 style="color:grey;">Mukesh Ambani</h3>
+                <p style="color:grey;">Mukesh Dhirubhai Ambani is an Indian businessman, the chairman, managing director, and largest shareholder of Reliance Industries Limited (RIL), a Fortune Global 500 company and India's most valuable company by its market value. According to Forbes magazine, he is the richest man in Asia and the 13th richest person in the world as of March 2019.</p>
+                
+              </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail"><img src="img19.jpg" alt="Thumbnail Image 1" class="animation-test element-to-hide">
+              <div class="caption">
+                <h3 style="color:grey;">Ratan Tata</h3>
+                <p style="color:grey;">Ratan Naval Tata,is an Indian industrialist,investor, philanthropist, and a former chairman of Tata Sons who serves as its chairman emeritus. He was also chairman of Tata Group, from 1990 to 2014, and again, as interim chairman, from October 2016 through February 2017, and continues to head its charitable trusts.</p>
+                
+              </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail"><img src="img17.jpg"style="height:290px;" alt="Thumbnail Image 1" class="animation-test element-to-hide">
+              <div class="caption">
+                <h3 style="color:grey;">Rakesh Jhunjhunwala</h3>
+                <p style="color:grey;">Rakesh Jhunjhunwala is an Indian investor and trader. He manages his own portfolio as a partner in his asset management firm, Rare Enterprises. He is one of the most successful equity investors in India. He made $2.1 billion with a starting capital of $100.</p>
+            
+              </div>
+            </div>
+         </div>
+		 <div style="text-align:center;">
+		 <a class="btn btn-danger" href="about.html"> Want to<br> know More--> </a>
+      </div>
+	  </div>
+    
+  </div><br>
+  <hr>
+
+  <div class="container" style="margin-top:40px;">
+  <div class="row">
+        <div class="col-md-6">
+		 <h2 style="color:grey;"> The world’s largest startup network. </h2><br>
+         <p class="lg" style="margin-top:20px;color:grey;"> With over 650,000 founders and 80,000 investment <br>professionals on our platform, we’ll connect you to <br>the whole startup ecosystem. We understand what<br> investors want to see from a startup, and we can help<br> you put your best foot forward. </p>
+	    </div>
+		 <div class="col-md-6">
+		 <img src="img14.png" style="width:600px;height:300px;" class="animation-test element-to-hide">
+		 </div>
+    </div>
+</div><br>
+
+<div class="container" style="margin-top:60px;">
+  <div class="row">
+        <div class="col-md-6">
+		 
+		 <img src="img15.png" style="width:600px;height:300px;"class="animation-test element-to-hide">
+	    </div>
+		<div class="col-md-6">
+		<h2 style="color:grey;"> Feedback and tools personalized to your journey. </h2><br>
+    <p class="lg" style="color:grey;"> With powerful performance benchmarks, tailored feedback, and clear next steps for your startup, you’ll learn where to focus your efforts and find the tools you need to execute right at your fingertips.
+		 </div>
+    </div>
+</div>
+<br>
+
+<div class="container" style="margin-top:60px;">
+  <div class="row">
+        <div class="col-md-6">
+		 <h2 style="color:grey;"> Designed to help you succeed. </h2><br>
+         <p class="lg" style="margin-top:20px;color:grey;"> Our mission is to help founders win. Whether your next milestone is initially setting up your company the right way or successfully closing a Series C, we are here to help you hit it. </p>
+	    </div>
+		 <div class="col-md-6">
+		 <img src="img16.png" style="width:600px;height:300px;"class="animation-test element-to-hide">
+		 </div>
+    </div>
+</div><br>
+<hr>
+
+
+<div class="container" id="ContactUs" style="margin-top:40px;">   
+  <h1 style="text-align:center;color:grey">Contact Us</h1><br>
+    <div class="row">
+        <div class="col-md-3" style="margin-left:0px;">
+
+      <h3 style="color:grey;">Corporate Headquarters</h3>
+      <p class="md" style="color:grey;">
+        Gust, Inc.
+        <br>44 West 28th St, 7th Floor
+        <br>New York, NY 10001 USA
+        <br>info@gust.com
+      </p>
+    </div>
+     
+        <div class="col-md-3">
+    
+      <h3 style="color:grey;">Technical Support and Feedback</h3>
+      <p class="md" style="color:grey;"> For general questions and feedback,send us a message</a>.</p>
+      <p class="md" style="color:grey;"> For support requests,please contact support.</p>
+    </div>
+
+   <div class="col-md-3">
+      <h3 style="color:grey;">Join the Gust Community</h3>
+      <p class="md" style="color:grey;">
+        Gust offers collaboration tools to investment organizations and entrepreneurs.
+      </p>
+    </div>
+<div class="col-md-3">
+    <h3 style="color:grey;">Partnerships</h3>
+	<p class="md" style="color:grey;">
+        For partnership or sponsorship inquiries,
+        send us a message.
+      </p>
+    </div>
+   </div>
+</div><br>
+<hr>
+
+
+<div class="container" style="text-align:center;">
+    <h2 style="text-align:center;margin-top:20px;color:grey;"> Plan to raise money? </h2>
+    <p class="lg" style="margin-top:15px;color:grey;">We’ll help you find the best path forward.</p>
+    <a class="btn btn-danger" href="form.html" target="_blank" style="margin-top:15px;" > Get Started </a>
+  </div>
+ <hr>
+
+ 
+ 
+ 
+ 
+ <div class="footer" style="background-color:#008080;color:black;margin-top:30px;">
+     <div class="row" style="margin-left:30px;">
+	    <div  class="col-md-4 mt-md-0 mt-3">
+			     <h4 style="margin-left:20px;color:grey;">About Us</h4><br>
+				 <p ><a href="termsandconditions.html"  target="_blank" style="color:grey;">Terms and Conditions</a></p>
+				  <p ><a href="PrivacyPolicy.html" target="_blank" style="color:grey;">Privacy Policy</a></p>
+			</div>
+	 
+	  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+	  <h5 class="text-uppercase mb-4 font-weight-bold" style="color:grey;">Company</h5><br>
+	  <p>
+	  <a href="career.html" style="color:grey;" target="_blank">Our Team</a>
+	  </p>
+	  <p>
+	  <a href="about.html" style="color:grey;" target="_blank">About Us</a>
+	  </p>
+	  <p>
+	  <a href="ourinvestors.html" style="color:grey;" target="_blank">Our Investors</a>
+	  </p>
+	  <p>
+	  <a href="contactus.html" style="color:grey;" target="_blank">Contact Us</a>
+	  </p>
+	  </div>
+	  
+	  
+	  
+	  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3" >
+	  <h6 class="text-uppercase mb-4 font-weight-bold" style="color:grey;">Solutions</h6><br>
+	  <p>
+	  <a href="startacompany.html" style="color:grey;" target="_blank">Start a Company</a>
+	  </p>
+	  <p>
+	  <a href="growyourstartup.html" style="color:grey;" target="_blank">Grow Your Startup</a>
+	  </p>
+	   <p>
+	  <a href="raisecapital.html" style="color:grey;" target="_blank">Raise a Capital</a>
+	  </p>
+	  </div>
+	  
+	  
+	  
+	  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3" ">
+	  <h6 class="text-uppercase mb-4 font-weight-bold" style="color:grey;">Address</h6><br>
+	
+	  <p style="color:grey;">7Gust, Inc.
+        <br>44 West 28th St, 7th Floor
+        <br>New York, NY 10001 USA
+        <br>info@gust.com</p>
+	  </div>
+	 </div> <hr>
+	  <div class="footer-copyright text-center py-3" style="background-color:cyan;color:grey;font-size:22px;">Making Dreams Come True Since 2012</div>
+	  
+</div>
+  
+  
+
+ 
+
+
+</body>
+</html> 
